@@ -1,0 +1,29 @@
+.p-coluna{
+		color: @vermelho;
+		line-height: bold;
+}//fechaPcoluna
+
+.p-tab p{
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}//fechaPtab
+
+.item-tab{
+	display: inline-block;
+
+			.btn-alt, .btn-del{
+				width: 40px;
+				height: 25px;
+				margin: 11px;
+					
+				border: none;
+				border-radius: 5px;
+				color: @white;
+			}//fechaBUTTON
+
+			.btn-alt{background: @btn-verde;&:hover{background:darken(@btn-verde,10%);}}
+			.btn-del{background: lighten(@vermelho,8%);&:hover{background:darken(@vermelho,10%);}}
+
+}//fechaITEMlab
+

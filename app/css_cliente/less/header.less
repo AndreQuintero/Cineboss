@@ -1,0 +1,116 @@
+@font-face {
+	font-family: 'OpenSans';
+	src: url("../fonts/Open_Sans/OpenSans-Regular.ttf");
+	font-size: 1em;
+}
+@font-face {
+	font-family: 'OpenSans-Light';
+	src: url("../fonts/Open_Sans/OpenSans-Light.ttf");
+	font-size: 1em;
+}
+
+@font-face {
+	font-family: 'Mogra';
+	src: url("../fonts/mogra/Mogra-Regular.ttf");
+	font-size: 1em;
+}
+
+* {
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	width: 100%;
+	height: 80px;
+	background: @cor-primaria;
+}
+
+header .container {
+	position: relative;
+}
+
+header .header-black {
+	width: 100%;
+	height: 15px;
+	background: darken(@cor-primaria,5%);
+}
+
+.logo a img{
+  width: 212px;
+  margin-top: 12px;
+}
+
+#menu {
+	margin: 6px 0; /* alinha o menu de navegação ao centro do "banner" */
+	margin-top: -43px;
+	
+	li{
+		display: inline-block; 
+		font-family: "OpenSans";
+
+			&.search{
+				width: 100px; /*fala a largura do campo search,aproximando do canto*/
+
+					input{
+						background-color: darken(@cor-primaria,5%); /*fala a cor de fundo do campo de busca*/
+						color: #fff; 
+						border: none; /*retira a borda */
+						height: 30px; /* altura do campo de busca*/
+						line-height: 30px;
+						padding-left: 10px;
+						}//fecha inpput do li search
+
+						& ::-webkit-input-placeholder {
+						color: rgba(255,255,255,.5);
+						}//fecha webkit
+
+						button{
+							background: none;
+							border: none;
+							position: absolute;
+							right: -6px;
+							top: -1px;
+							outline: none;
+
+								& i{
+									font-size: 15px;
+									color: rgba(255,255,255,.5);
+									}//fecha i do botao
+						}//fecha botao do lisearch
+
+			}//fecha &.search
+
+		a{
+			color: #fff; /* cor branca nos itens do menu de navegação*/
+			font-size: 16px;	
+			padding: 10px 25px; /* distancia de uma palavra para outra*/
+			text-decoration: none;
+				&:hover{
+					/*deixar um fundo selecionado qndo passar o mouse em cima dos itens do menu de navegação*/
+					background: rgba(205,35,35,.9);
+					border-radius: 4px;
+					}//fecha hover do a
+			}//fecha a do li
+
+	}//fecha li
+
+}//fecha menu
+
+#menu li.search .input-group {
+	top: 9px; /* alinha o campo de busca na mesma altura do menu de navegação*/
+}//fechaLisearch
+
+ #menu ul li a.menu_ativo {
+	color: @cor-secundaria;
+
+		 &:hover {
+		color: #fff;
+		}//fecha hover	 
+} //fecha a.menu ativo

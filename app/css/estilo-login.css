@@ -1,0 +1,277 @@
+.estilo-h1 {
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'OpenSans';
+  font-size: h1-font;
+  max-width: 300px;
+  margin-top: 25px;
+  color: #cd2323;
+  line-height: 63px;
+}
+.estilo-p {
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'OpenSans';
+  font-size: 16px;
+  max-width: 300px;
+  margin-top: 25px;
+  color: #000;
+}
+/*
+Z-index na pagina
+
+#banner .item img = 1
+
+#tarja = 2
+
+*/
+@font-face {
+  font-family: 'OpenSans';
+  src: url("../fonts/Open_Sans/OpenSans-Regular.ttf");
+  font-size: 1em;
+}
+@font-face {
+  font-family: 'OpenSans-Light';
+  src: url("../fonts/Open_Sans/OpenSans-Light.ttf");
+  font-size: 1em;
+}
+@font-face {
+  font-family: 'Mogra';
+  src: url("../fonts/mogra/Mogra-Regular.ttf");
+  font-size: 1em;
+}
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+header {
+  width: 100%;
+  height: 80px;
+  background: #1e1e22;
+}
+header .container {
+  position: relative;
+}
+header .header-black {
+  width: 100%;
+  height: 15px;
+  background: #141418;
+}
+#logotipo {
+  width: 212px;
+  height: auto;
+  position: absolute;
+  margin-left: -70px;
+  margin-top: 12px;
+}
+#menu {
+  margin: 15px 0;
+}
+/* Todos os botoes da pagina*/
+.btn {
+  background: #cd2323;
+  color: #fff;
+}
+.btn:hover {
+  color: #fff;
+  background: #af1e1e;
+}
+.btn:enabled {
+  color: #fff;
+}
+.dropdown,
+.sair {
+  float: left;
+  margin: 0 10px;
+}
+body {
+  background: #1e1e22;
+  box-sizing: border-box;
+}
+/* Titulo da PAgina*/
+.logo {
+  text-align: center;
+}
+.logo img {
+  margin-top: 20px;
+  height: auto;
+  width: 320px;
+}
+.row {
+  position: relative;
+}
+/* QUADRADO ESCURO */
+.quad-titulo {
+  margin: 0 auto;
+  background: #131316;
+  width: 300px;
+  height: 80px;
+  margin-top: 80px;
+}
+.infos h4 {
+  color: #cd2323;
+  font-size: 22px;
+}
+.infos p {
+  color: #cd2323;
+}
+.cadeado i {
+  color: #cd2323;
+  font-size: 75px;
+  display: block;
+  margin-left: 25px;
+  margin-top: 5px;
+}
+/* FORMULARIO */
+.quad-form {
+  margin: 0 auto;
+  background: #2c2c32;
+  width: 300px;
+  height: 200px;
+}
+.quad-form input {
+  width: 250px;
+  height: 40px;
+  padding: 10px;
+  margin-top: 20px;
+  margin-left: 25px;
+  border-radius: 5px;
+  border: 0 ;
+}
+.quad-form button {
+  margin-top: 20px;
+  width: 250px;
+  height: 40px;
+  margin-left: 25px;
+  border: none;
+  border-radius: 5px;
+}
+.btn {
+  background: #cd2323;
+  border: none;
+  color: #fff;
+  font-size: 22px;
+}
+.btn:hover {
+  background: #aa1d1d;
+  color: #fff;
+}
+.btn a {
+  text-decoration: none;
+  color: #fff;
+}
+/* animação de carregamento da pagina igual do youtube*/
+.pace {
+  -webkit-pointer-events: none;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+.pace-inactive {
+  display: none;
+}
+.pace .pace-progress {
+  background: #cd2323;
+  /*background: #8844ee; */
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+  right: 100%;
+  width: 100%;
+  height: 3px;
+}
+/* fim da animação de carregamento da pagina*/
+/* FOOTER */
+footer {
+  width: 100%;
+  height: 220px;
+  background: #141418;
+}
+footer img {
+  width: 300px;
+  height: auto;
+  position: absolute;
+  margin-left: -70px;
+  margin-top: 50px;
+}
+footer h4 {
+  color: #cd2323;
+  font-family: 'OpenSans';
+  font-size: 32px;
+  text-align: left;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+footer i {
+  color: #cd2323;
+}
+footer span {
+  color: #fff;
+  font-size: 18px;
+  font-family: 'OpenSans-Light';
+}
+footer a {
+  color: #fff;
+  font-size: 16px;
+  font-family: 'OpenSans-Light';
+  line-height: 24px;
+}
+footer a:hover {
+  color: #cd2323;
+  text-decoration: none;
+}
+footer .list-socials i {
+  color: #fff;
+  font-size: 22px;
+  margin: 7px auto;
+}
+footer .list-socials i:hover {
+  background: #cd2323;
+}
+footer .list-socials li {
+  display: inline-block;
+  margin-right: 55px;
+}
+footer .list-socials a {
+  display: block;
+  border: #cd2323 1px solid;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  border-radius: 20px;
+  text-align: center;
+  margin-top: 130px;
+  margin-left: -16px;
+}
+footer .list-socials a:hover {
+  background: #cd2323;
+}
+/* animação de carregamento da pagina igual do youtube*/
+.pace {
+  -webkit-pointer-events: none;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+.pace-inactive {
+  display: none;
+}
+.pace .pace-progress {
+  background: #cd2323;
+  /*background: #8844ee; */
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+  right: 100%;
+  width: 100%;
+  height: 3px;
+}
+/* fim da animação de carregamento da pagina*/

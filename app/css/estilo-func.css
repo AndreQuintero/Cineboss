@@ -1,0 +1,356 @@
+.estilo-h1 {
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'OpenSans';
+  font-size: h1-font;
+  max-width: 300px;
+  margin-top: 25px;
+  color: #cd2323;
+  line-height: 63px;
+}
+.estilo-p {
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'OpenSans';
+  font-size: 16px;
+  max-width: 300px;
+  margin-top: 25px;
+  color: #000;
+}
+/*
+Z-index na pagina
+
+#banner .item img = 1
+
+#tarja = 2
+
+*/
+@font-face {
+  font-family: 'OpenSans';
+  src: url("../fonts/Open_Sans/OpenSans-Regular.ttf");
+  font-size: 1em;
+}
+@font-face {
+  font-family: 'OpenSans-Light';
+  src: url("../fonts/Open_Sans/OpenSans-Light.ttf");
+  font-size: 1em;
+}
+@font-face {
+  font-family: 'Mogra';
+  src: url("../fonts/mogra/Mogra-Regular.ttf");
+  font-size: 1em;
+}
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+header {
+  width: 100%;
+  height: 80px;
+  background: #1e1e22;
+}
+header .container {
+  position: relative;
+}
+header .header-black {
+  width: 100%;
+  height: 15px;
+  background: #141418;
+}
+.logo a img {
+  width: 212px;
+  margin-top: 12px;
+}
+/* Todos os botoes da pagina*/
+.btn {
+  background: #cd2323;
+  color: #fff;
+}
+
+.sair  a{
+	text-decoration : none;
+	color: #fff;
+}
+
+.btn:hover {
+  color: #fff;
+  background: #af1e1e;
+}
+.btn:enabled {
+  color: #fff;
+}
+#menu {
+  padding: 15px;
+  margin-top: -50px;
+}
+/* SECTION */
+section p {
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'OpenSans';
+  font-size: 16px;
+  max-width: 300px;
+  margin-top: 25px;
+  color: #000;
+}
+section h1 {
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'OpenSans';
+  font-size: h1-font;
+  max-width: 300px;
+  margin-top: 25px;
+  color: #cd2323;
+  line-height: 63px;
+  white-space: nowrap;
+}
+#escolhaImagem {
+  margin-bottom: 10px;
+}
+#direita {
+  position: absolute;
+  left: 100%;
+  top: 0;
+}
+#direita img {
+  max-width: 320px ;
+  max-height: 450px;
+}
+#esquerda {
+  position: relative;
+}
+.p-coluna {
+  color: #cd2323;
+  line-height: bold;
+}
+.p-tab p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.item-tab {
+  display: inline-block;
+}
+.item-tab .btn-alt,
+.item-tab .btn-del {
+  width: 40px;
+  height: 25px;
+  margin: 11px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+}
+.item-tab .btn-alt {
+  background: #2ecc71;
+}
+.item-tab .btn-alt:hover {
+  background: #25a25a;
+}
+.item-tab .btn-del {
+  background: #de3b3b;
+}
+.item-tab .btn-del:hover {
+  background: #a11c1c;
+}
+/* FOOTER */
+footer {
+  width: 100%;
+  height: 220px;
+  background: #141418;
+}
+footer img {
+  width: 300px;
+  height: auto;
+  position: absolute;
+  margin-left: -70px;
+  margin-top: 50px;
+}
+footer h4 {
+  color: #cd2323;
+  font-family: 'OpenSans';
+  font-size: 32px;
+  text-align: left;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+footer i {
+  color: #cd2323;
+}
+footer span {
+  color: #fff;
+  font-size: 18px;
+  font-family: 'OpenSans-Light';
+}
+footer a {
+  color: #fff;
+  font-size: 16px;
+  font-family: 'OpenSans-Light';
+  line-height: 24px;
+}
+footer a:hover {
+  color: #cd2323;
+  text-decoration: none;
+}
+footer .list-socials i {
+  color: #fff;
+  font-size: 22px;
+  margin: 7px auto;
+}
+footer .list-socials i:hover {
+  background: #cd2323;
+}
+footer .list-socials li {
+  display: inline-block;
+  margin-right: 55px;
+}
+footer .list-socials a {
+  display: block;
+  border: #cd2323 1px solid;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  border-radius: 20px;
+  text-align: center;
+  margin-top: 130px;
+  margin-left: -16px;
+}
+footer .list-socials a:hover {
+  background: #cd2323;
+}
+/* animação de carregamento da pagina igual do youtube*/
+.pace {
+  -webkit-pointer-events: none;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+.pace-inactive {
+  display: none;
+}
+.pace .pace-progress {
+  background: #cd2323;
+  /*background: #8844ee; */
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+  right: 100%;
+  width: 100%;
+  height: 3px;
+}
+/* fim da animação de carregamento da pagina*/
+
+
+/* MENSAGEM DE SUCESSO*/
+
+/* modal Fechado */
+.tab-modal {
+  position: fixed;
+  background-color: rgba(30, 30, 34, 0.9);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease-in-out;
+}
+.box {
+  position: absolute;
+  border-radius: 4px;
+  left: 50%;
+  top: 50%;
+  width: 600px;
+  height: 255px;
+  background-color: #fff;
+  margin-top: -200px;
+  margin-left: -300px;
+  box-shadow: 0 0 18px 0 rgba(0, 0, 0, 0.4);
+  transition: margin 0.2s ease-in-out;
+}
+.fecha-botao {
+  position: absolute;
+  left: 100%;
+  bottom: 100%;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  width: 24px;
+  height: 24px;
+  background-image: url('../img/x.png');
+  cursor: pointer;
+}
+.conteudo {
+  height: 170px;
+  width: 100%;
+}
+.conteudo .title {
+  font-size: 32px;
+  font-weight: bold;
+  padding: 30px;
+  font-family: 'OpenSans-Regular';
+  color: #cd2323;
+}
+.conteudo .body {
+  font-weight: bold;
+  color: #999;
+  line-height: 1.6em;
+  padding: 0 30px;
+}
+
+/* modal aberto */
+.modal-aberto .tab-modal {
+  opacity: 1;
+  pointer-events: all;
+}
+.modal-aberto .tab-modal .box {
+  margin-top: -180px;
+}
+
+
+
+/* -------------- AJAX ------------------*/
+.resultado {
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	background: #2ecc71;
+	display: block;
+	width: 100%;
+	height: 25px;
+	border-radius: 10px;
+}
+.msgm{
+	white-space:nowrap;
+	color: #fff;
+	line-height: 25px;
+	margin-left: 39%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

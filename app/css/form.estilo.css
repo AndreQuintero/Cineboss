@@ -1,0 +1,32 @@
+body {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body .container h1{
+	font-size: 48px;
+	font-family: arial;
+	text-align: center;
+	color: red;
+	margin-bottom: 40px;
+}
+
+#escolhaImagem {
+	margin-bottom: 10px;
+}
+
+#direita{
+	position: absolute;
+	left:600px;
+	top: 0;
+}
+
+#direita img {
+	max-width: 320px ;
+	max-height: 450px;
+}
+
+#esquerda{
+	position: relative;
+}

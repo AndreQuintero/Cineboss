@@ -1,0 +1,296 @@
+/*
+Z-index na pagina
+
+#banner .item img = 1
+
+#tarja = 2
+
+*/
+
+@font-face {
+	font-family: 'OpenSans';
+	src: url("../fonts/Open_Sans/OpenSans-Regular.ttf");
+	font-size: 1em;
+}
+@font-face {
+	font-family: 'OpenSans-Light';
+	src: url("../fonts/Open_Sans/OpenSans-Light.ttf");
+	font-size: 1em;
+}
+
+@font-face {
+	font-family: 'Mogra';
+	src: url("../fonts/mogra/Mogra-Regular.ttf");
+	font-size: 1em;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	width: 100%;
+	height: 80px;
+	background: #1e1e22;
+}
+
+header .container {
+	position: relative;
+}
+
+header .header-black {
+	width: 100%;
+	height: 15px;
+	background: #141418;
+}
+
+#logotipo {
+	width: 212px;
+	height: auto;
+	position: absolute;
+	margin-left: -70px;
+	margin-top: 12px;
+}
+
+#menu {
+	margin: 6px 0; /* alinha o menu de navegação ao centro do "banner" */
+}
+
+#menu li {
+	display: inline-block; 
+	font-family: "OpenSans";
+}
+
+#menu li.search {
+	width: 100px; /*fala a largura do campo search,aproximando do canto*/
+}
+
+#menu li.search input {
+	background-color: #141418; /*fala a cor de fundo do campo de busca*/
+	color: #fff; 
+	border: none; /*retira a borda */
+	height: 30px; /* altura do campo de busca*/
+	line-height: 30px;
+}
+
+#menu li.search ::-webkit-input-placeholder {
+	color: rgba(255,255,255,.5);
+}
+
+#menu li.search button {
+	background: none;
+	border: none;
+	position: absolute;
+	right: -6px;
+	top: -1px;
+}
+
+#menu li.search button i {
+	font-size: 15px;
+	color: rgba(255,255,255,.5);
+}
+
+#menu li a {
+	color: #fff; /* cor branca nos itens do menu de navegação*/
+	font-size: 16px;	
+	padding: 10px 25px; /* distancia de uma palavra para outra*/
+	text-decoration: none;
+}
+
+#menu li a:hover { /*deixar um fundo selecionado qndo passar o mouse em cima dos itens do menu de navegação*/
+	background: rgba(205,35,35,.9);
+	border-radius: 4px;
+}
+
+#menu li.search .input-group {
+	top: 9px; /* alinha o campo de busca na mesma altura do menu de navegação*/
+}
+
+/*
+#banner {
+	width: 100%;
+	height: auto;
+	position: relative;
+	background-image: url("../img/guardiao02.jpg");
+}
+*/
+#banner {
+	
+}
+
+#banner .item img {
+	display: block;
+	width: 100%;
+	height: auto;
+	position: relative;
+	z-index: 1;
+}
+
+#titulo h1{
+	text-transform: uppercase;
+	text-align: center;
+	margin-top: 60px;
+	font-size: 48px;
+	color: #cd2323;
+	font-family: 'Mogra';
+}
+
+#titulo hr{
+	width: 100px;
+	border: #cd2323 solid 3px;
+
+}
+
+section{
+	background: #d9d9dd ;
+}
+
+
+
+section p {
+	margin-left: auto;
+	margin-right: auto;
+	font-family: 'OpenSans';
+	font-size: 16px;
+	max-width: 300px;
+	margin-top: 25px;
+	color: black;
+}
+
+
+section h1 {
+	margin-left: auto;
+	margin-right: auto;
+	font-family: 'OpenSans';
+	font-size: 42px;
+	max-width: 300px;
+	margin-top: 25px;
+	color: #cd2323;
+}
+
+#tabela thead tr th {
+	text-align: center;
+	font-family: 'OpenSans';
+	color: red;
+	font-size: 21px;
+	border-bottom: 0;
+
+}
+
+#tabela tbody th {
+	text-align: center;
+	font-family: 'OpenSans-Light';
+	color: black;
+	font-size: 16px;
+	border-top: 0;
+	text-decoration: none;
+
+}
+
+footer {
+	width: 100%;
+	height: 220px;
+	background: #1e1e22;
+}
+
+
+
+footer img {
+	width: 300px;
+	height: auto;
+	position: absolute;
+	margin-left: -70px;
+	margin-top: 50px;
+}
+
+footer h4 {
+	color: #cd2323;
+	font-family: 'OpenSans';
+	font-size: 32px;
+	text-align: left;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+footer  i{
+	color: #cd2323;
+}
+
+footer span {
+	color: #fff;
+	font-size: 18px;
+	font-family: 'OpenSans-Light';
+}
+
+footer a {
+	color: #fff;
+	font-size: 16px;
+	font-family: 'OpenSans-Light';
+	line-height: 24px;
+}
+
+footer a:hover {
+	color: #cd2323;
+	text-decoration: none;
+}
+
+footer .list-socials i {
+	color: #fff;
+	font-size: 22px;
+	margin: 7px auto;
+}
+
+footer .list-socials li {
+	display: inline-block;
+	margin-right: 55px;
+}
+
+
+footer .list-socials a {
+	display: block;
+	border: #cd2323 1px solid;
+	width: 36px;
+	height: 36px;
+	line-height: 36px;
+	border-radius: 20px;
+	text-align: center;
+	margin-top: 130px;
+	margin-left: -16px;
+}
+
+/* animação de carregamento da pagina igual do youtube*/ 
+.pace {
+  -webkit-pointer-events: none;
+  pointer-events: none;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.pace-inactive {
+  display: none;
+}
+
+.pace .pace-progress {
+	background: #cd2323;
+  /*background: #8844ee; */
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+  right: 100%;
+  width: 100%;
+  height: 3px;
+}
+/* fim da animação de carregamento da pagina*/
+
+.p-tab p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

@@ -1,0 +1,84 @@
+/*
+Z-index na pagina
+
+#banner .item img = 1
+
+#tarja = 2
+
+*/
+
+@font-face {
+	font-family: 'OpenSans';
+	src: url("../fonts/Open_Sans/OpenSans-Regular.ttf");
+	font-size: 1em;
+}
+@font-face {
+	font-family: 'OpenSans-Light';
+	src: url("../fonts/Open_Sans/OpenSans-Light.ttf");
+	font-size: 1em;
+}
+
+@font-face {
+	font-family: 'Mogra';
+	src: url("../fonts/mogra/Mogra-Regular.ttf");
+	font-size: 1em;
+}
+
+* {
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	width: 100%;
+	height: 80px;
+	background: @header-back;
+
+		.container {
+			position: relative;
+		}//fechaContaier
+
+		.header-black {
+		width: 100%;
+		height: 15px;
+		background: @header-black;
+		}//fechaHEADER-BLACK
+
+}//fechaHEADER
+
+.logo a img{
+  width: 212px;  
+  margin-top: 12px;
+}
+
+/* Todos os botoes da pagina*/
+.btn{
+	background: @vermelho;
+	color: @white;
+
+		&:hover{
+			color: @white;
+			background: darken(@vermelho,7%);
+		}//fecha&HOVER
+
+		&:enabled{ 
+			color: @white;
+		}//fechaENABLE
+
+}//fechaBTN
+
+.sair a{
+	text-decoration : none;
+	color: @white;
+}
+
+#menu{
+	padding: 15px;
+	margin-top: -50px;
+}
